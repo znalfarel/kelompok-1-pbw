@@ -3,694 +3,350 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>PasarLOAK - Marketplace Online</title>
-    <link rel="icon" href="img/logo_pasar.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HostKita - VPS dan Web Hosting</title>
+    <link rel="icon" href="img/logo_octa.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body id="top">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5E8D7;">
-        <div class="container-fluid">
-            <img src="img/logo_pasar.png" alt="Logo PasarLOAK" width="70" height="50">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#top">
+                <img src="img/logo_octa.png" alt="Octa Cloud" width="100">
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Buka navigasi">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#kategori"><strong>Kategori</strong></a>
-                    <a class="nav-link" href="#"><strong>Features</strong></a>
-                    <a class="nav-link" href="#"><strong>Pricing</strong></a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#top">Beranda</a>
+                    <a class="nav-link" href="#layanan">Layanan</a>
+                    <a class="nav-link" href="#harga">Harga Paket</a>
+                    <a class="nav-link" href="#kontak">Kontak</a>
                 </div>
+
+                <a href="#harga" class="btn btn-dark ms-lg-3">
+                    Mulai Sekarang
+                </a>
             </div>
+
         </div>
     </nav>
-    <br>
-    <h6>
-        <marquee>Selamat datang di PasarLOAK! | Diskon hingga 50% untuk semua produk! | Selamat berbelanja!</marquee>
-    </h6>
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <h2 id="kategori">Kategori Produk</h2>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>No</th>
-            <th>Kategori</th>
-            <th>Jumlah Produk</th>
-            <th>Link</th>
-        </tr>
-
-        <tr>
-            <td>1</td>
-            <td>Elektronik</td>
-            <td>3 Produk</td>
-            <td>
-                <a href="#elektronik">Lihat Produk</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>Fashion</td>
-            <td>3 Produk</td>
-            <td>
-                <a href="#fashion">Lihat Produk</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>Makanan</td>
-            <td>3 Produk</td>
-            <td>
-                <a href="#makanan">Lihat Produk</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>4</td>
-            <td>Gaming</td>
-            <td>3 Produk</td>
-            <td>
-                <a href="#gaming">Lihat Produk</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>Aksesoris</td>
-            <td>3 Produk</td>
-            <td>
-                <a href="#aksesoris">Lihat Produk</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>6</td>
-            <td>Promo</td>
-            <td>Berbagai Promo</td>
-            <td>
-                <a href="#promo">Lihat Promo</a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>7</td>
-            <td>Kontak</td>
-            <td>Hubungi Penjual</td>
-            <td>
-                <a href="#kontak">Hubungi</a>
-            </td>
-        </tr>
-    </table>
-
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <!-- ELEKTRONIK -->
-    <h2 id="elektronik">Elektronik</h2>
-
-    <p>
-        Berbagai perangkat elektronik untuk kebutuhan sehari-hari,
-        belajar, dan bekerja.
-    </p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Informasi</th>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYOmTqNRmj36S4UFuy38nLOTBY-J2YKLu7_w6AjqoVQ&s=10"
-                    width="150" alt="Smartphone">
-            </td>
-
-            <td>
-                <strong>Samsung A56</strong>
-            </td>
-
-            <td>
-                <del>Rp5.499.000</del>
-                <br>
-                <strong>Rp4.649.000</strong>
-            </td>
-
-            <td>
-                Smartphone dengan performa tinggi dan baterai tahan lama.
-                <br><br>
-                <mark>DISKON 15%</mark>
-                <br>
-                <a href="https://s.shopee.co.id/3B80y6S3Rn" target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-8224v-mk2a42zstbly4f_tn" width="150"
-                    alt="Headphone">
-            </td>
-
-            <td>
-                <strong>Headphone Wireless</strong>
-            </td>
-
-            <td>
-                <strong>Rp450.000</strong>
-            </td>
-
-            <td>
-                Headphone wireless dengan kualitas suara jernih.
-                <br><br>
-                <a href="https://s.shopee.co.id/6q1JKu3kUa" target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf" width="150" alt="Monitor">
-            </td>
-
-            <td>
-                <strong>Monitor LED 24 Inch</strong>
-            </td>
-
-            <td>
-                <strong>Rp1.750.000</strong>
-            </td>
-
-            <td>
-                Monitor yang cocok untuk belajar dan bekerja.
-                <br><br>
-                <a href="https://id.shp.ee/6wh6yaTS" target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <p>
-        <a href="#top">↑ Kembali ke Kategori</a>
-    </p>
-
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <!-- FASHION -->
-    <h2 id="fashion">Fashion</h2>
-
-    <p>
-        Temukan berbagai pakaian dan perlengkapan fashion dengan
-        desain <i>modern dan kekinian</i>.
-    </p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Informasi</th>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3" width="150" alt="Hoodie">
-            </td>
-
-            <td>
-                <strong>Jaket Hoodie Premium</strong>
-            </td>
-
-            <td>
-                <del>Rp250.000</del>
-                <br>
-                <ins>Rp199.000</ins>
-            </td>
-
-            <td>
-                Hoodie berbahan nyaman dengan desain modern.
-                <br><br>
-                <mark>Promo Hari Ini</mark>
-                <br>
-                <a href="https://www.google.com/search?q=jaket+hoodie" target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasm-m31kwmks35ht77.webp" width="150"
-                    alt="Kaos">
-            </td>
-
-            <td>
-                <strong>Jam tangan digital cewek</strong>
-            </td>
-
-            <td>
-                <strong>Rp805.000</strong>
-            </td>
-
-            <td>
-                jam tangan digital.
-                <br><br>
-                <a href="https://www.lazada.co.id/products/jam-tangan-bulat-rubber-pria-wanita-digital-led-watch-original-i8793884616-s16237852735.html?from_gmc=1&fl_tag=1"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztl-mqn2oui4ml1d0e.webp" width="150"
-                    alt="Sepatu">
-            </td>
-
-            <td>
-                <strong>Sepatu Sneakers</strong>
-            </td>
-
-            <td>
-                <strong>Rp380.000</strong>
-            </td>
-
-            <td>
-                Sneakers untuk aktivitas sehari-hari.
-                <br><br>
-                <a href="https://id.shp.ee/8ZyhemNA" target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <p>
-        <a href="#top">↑ Kembali ke Kategori</a>
-    </p>
-
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <!-- MAKANAN -->
-    <h2 id="makanan">Makanan</h2>
-
-    <p>
-        Pilihan makanan ringan yang cocok untuk
-        <q>cemilan saat santai bersama keluarga</q>.
-    </p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Informasi</th>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087" width="150" alt="Keripik">
-            </td>
-
-            <td>
-                <strong>Keripik Pisang Cokelat</strong>
-            </td>
-
-            <td>
-                <strong>Rp25.000</strong>
-            </td>
-
-            <td>
-                Keripik pisang asin.
-                <br><br>
-                Berat: 1kg
-                <br>
-                <a href="https://shopee.co.id/product/537387019/13426132565?gads_t_sig=gqRjZGVrxHCFomtpsTE0MjUxOnRzc19zZGtfa2V5omt20QACpGFsZ2_SAAAAZKNkZWvAomN0xEAAAAAMaBRvcqdZwgRklGTWoHoxFGhRfNAexxPkhN1n8rcCO5qFEud_-aY2hsGdfUnqCpX0P0Z7lpJy6IP6_Ew8qmNpcGhlcnRleHTEcQAAAAwaQESbhFn-jG5haJuSSn-mz3xzuyN1B71rOxSFrP9UFt-62Wbmdc7G6pMzOPzloEAQa5cXu02p-sNWoggjMMY63vLVoS5r3CAVC4Yshr3Qg7dt-7OiNGGaxAZpU5_OdghIL30tze-a3vJJFWnh"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35" width="150" alt="Cookies">
-            </td>
-
-            <td>
-                <strong>Cookies Cokelat</strong>
-            </td>
-
-            <td>
-                <strong>Rp38.000</strong>
-            </td>
-
-            <td>
-                Cookies dengan rasa cokelat yang lezat.
-                <br><br>
-                <a href="https://shopee.co.id/product/148738214/3162971741?gads_t_sig=gqRjZGVrxHCFomtpsTE0MjUxOnRzc19zZGtfa2V5omt20QACpGFsZ2_SAAAAZKNkZWvAomN0xEAAAAAMaBRvcqdZwgRklGTWoHoxFGhRfNAexxPkhN1n8rcCO5qFEud_-aY2hsGdfUnqCpX0P0Z7lpJy6IP6_Ew8qmNpcGhlcnRleHTEbwAAAAwa9MuQaUsZoc7UfxGQqrYHVk9hfJlTqpvjxn4i88G2XyWAmyocULQqwZgYT9XKwrDs8ej7tkz0P-Z60CumURMmth_avaFYD0gviuDrdDw3vMNmVsGdtAkkzQ2hN-4Bkj1tSGnduDlwU8Fziw"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-81ztm-ms5uu06y8t8hba@resize_w900_nl.webp"
-                    width="150" alt="Donat">
-            </td>
-
-            <td>
-                <strong>Donat Premium</strong>
-            </td>
-
-            <td>
-                <strong>Rp125.000</strong>
-            </td>
-
-            <td>
-                Donat dengan berbagai pilihan topping.
-                <br><br>
-                <a href="https://shopee.co.id/product/5406840/4049783134?gads_t_sig=gqRjZGVrxHCFomtpsTE0MjUxOnRzc19zZGtfa2V5omt20QACpGFsZ2_SAAAAZKNkZWvAomN0xEAAAAAMaBRvcqdZwgRklGTWoHoxFGhRfNAexxPkhN1n8rcCO5qFEud_-aY2hsGdfUnqCpX0P0Z7lpJy6IP6_Ew8qmNpcGhlcnRleHTEawAAAAzFbGCXV4J0cOIwAfHc64-JYlqbPcsQuighUyWCEwEP9dq06EydpZk757jVg3frMaEQyaQDhyQdllL0Rc0gOtz5p4SILJHzQJ3m25oCs8QQ1FMAe4MySfORVr1L3-aI77gGyXR3vp2v"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <p>
-        <a href="#top">↑ Kembali ke Kategori</a>
-    </p>
-
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <!-- GAMING -->
-    <h2 id="gaming">Gaming</h2>
-
-    <p>
-        Perlengkapan gaming untuk meningkatkan pengalaman bermain game.
-    </p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Informasi</th>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk3-m7rehflawguodc.webp" width="150"
-                    alt="Keyboard Gaming">
-            </td>
-
-            <td>
-                <strong>Gaming Keyboard</strong>
-            </td>
-
-            <td>
-                <strong>Rp329.000</strong>
-            </td>
-
-            <td>
-                Keyboard gaming dengan lampu RGB.
-                <br><br>
-                <a href="https://shopee.co.id/product/84555100/28130756609?d_id=c41ca&uls_trackid=56qrq49s02lo&utm_content=F3o8ftLFSjnRDqFuZ1YaWKfUHYb"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-822wp-mny0b7gmnjet17@resize_w900_nl.webp"
-                    width="150" alt="Gaming Mouse">
-            </td>
-
-            <td>
-                <strong>Gaming Mouse</strong>
-            </td>
-
-            <td>
-                <strong>Rp129.000</strong>
-            </td>
-
-            <td>
-                Mouse gaming dengan sensor yang responsif.
-                <br><br>
-                <a href="https://shopee.co.id/product/1267002450/43422603388?d_id=c41ca&uls_trackid=56qrqdj708jd&utm_content=F3o8ftLFSph4bvG783gKDDRT38K"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rd5q-m6v7u17jnvvlcd@resize_w900_nl.webp"
-                    width="150" alt="Game Controller">
-            </td>
-
-            <td>
-                <strong>VGA Rtx 5090 Gacorrr</strong>
-            </td>
-
-            <td>
-                <strong>Rp101.985.000</strong>
-            </td>
-
-            <td>
-                VGA Rtx 5090 Gacorrr.
-                <br><br>
-                <a href="https://shopee.co.id/product/1120452270/28128085828?d_id=c41ca&uls_trackid=56qrr3gg06k0&utm_content=F3o8ftLFSzfuysTXaKxbgnUCQx7"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <p>
-        <a href="#top">↑ Kembali ke Kategori</a>
-    </p>
-
-    <hr size="6" style="background-color: orangered; border: none;">
-
-    <!-- AKSESORIS -->
-    <!-- (035) -->
-    <h2 id="aksesoris">Aksesoris</h2>
-
-    <p>
-        Berbagai aksesoris untuk menunjang penampilan dan aktivitas
-        sehari-hari.
-    </p>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Gambar</th>
-            <th>Nama Produk</th>
-            <th>Harga</th>
-            <th>Informasi</th>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134201-7rbkc-madv5d8nbrsbb5@resize_w900_nl.webp"
-                    width="150" alt="Jam Tangan">
-            </td>
-
-            <td>
-                <strong>Garmin Forerunner 165</strong>
-            </td>
-
-            <td>
-                <strong>Rp2.850.000</strong>
-            </td>
-
-            <td>
-                Jam tangan dengan desain elegan.
-                <br><br>
-                <a href="https://shopee.co.id/product/257962329/24415898596?d_id=b56a1&uls_trackid=56qrri8700jd&utm_content=UD5j84AFiJgBMwNSSVCfMt2WbHZ"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk9-m7byolr0vgue38.webp" width="150"
-                    alt="earbuds">
-            </td>
-
-            <td>
-                <strong>HUAWEI FreeBuds 5i Wireless Earphone</strong>
-            </td>
-
-            <td>
-                <strong>Rp700.000</strong>
-            </td>
-
-            <td>
-                Earbuds untuk aktivitas sehari-hari.
-                <br><br>
-                <a href="https://shopee.co.id/HUAWEI-FreeBuds-5i-Wireless-Earphone-Hi-Res-Sound-28hours-of-Powerful-Battery-Life-Wireless-Earphone-i.251483552.17093211537?extraParams=%7B%22display_model_id%22%3A237869613145%2C%22model_selection_logic%22%3A3%7D"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lsc91cbpy1ifda@resize_w900_nl.webp"
-                    width="150" alt="Tas">
-            </td>
-
-            <td>
-                <strong>EIGER SAFAR TRAVEL BACKPACK 38L</strong>
-            </td>
-
-            <td>
-                <strong>Rp879.000</strong>
-            </td>
-
-            <td>
-                Tas praktis untuk membawa barang banyak.
-                <br><br>
-                <a href="https://shopee.co.id/EIGER-SAFAR-TRAVEL-BACKPACK-38L-i.19260065.24366180408?extraParams=%7B%22display_model_id%22%3A245396057390%2C%22model_selection_logic%22%3A3%7D"
-                    target="_blank">
-                    Lihat Detail
-                </a>
-            </td>
-        </tr>
-    </table>
-
-    <p>
-        <a href="#top">↑ Kembali ke Kategori</a>
-    </p>
-    <footer class="text-black mt-5" style="background-color: #F5E8D7;">
+
+
+    <!-- Hero -->
+    <section class="home py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-6">
+                    <span class="badge mb-3" style="background-color: #fc5c00;">
+                        Solusi Hosting untuk Semua
+                    </span>
+
+                    <h1 class="fw-bold display-5">
+                        Bangun Website Impianmu dengan
+                        <span style="color: #fc5c00;">Hosting Terbaik</span>
+                    </h1>
+
+                    <p class="text-secondary mt-3">
+                        Nikmati layanan VPS dan web hosting yang cepat,
+                        stabil, dan mudah digunakan untuk website,
+                        toko online, aplikasi, maupun proyek pribadimu.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="#harga" class="btn btn-success">
+                            Lihat Paket
+                        </a>
+
+                        <a href="#layanan" class="btn btn-outline-success">
+                            Pelajari Layanan
+                        </a>
+                    </div>
+
+                    <p class="mt-4 text-secondary">
+                        ✓ Performa andal
+                        &nbsp; ✓ Pilihan paket fleksibel
+                        &nbsp; ✓ Dukungan pelanggan
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <div class="hero-image">
+                        <img src="img/logo_kocak.png" alt="logo_kocak" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Layanan -->
+    <section class="py-5" id="layanan">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Layanan Kami</h2>
+                <p class="text-secondary">
+                    Pilih layanan yang sesuai dengan kebutuhanmu.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🌐</div>
+                        <h4 class="fw-bold">Web Hosting</h4>
+                        <p class="text-secondary">
+                            Hosting untuk website pribadi, blog,
+                            portofolio, dan toko online.
+                        </p>
+                        <a href="#harga" class="text-success">
+                            Lihat Paket →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🖥️</div>
+                        <h4 class="fw-bold">VPS Server</h4>
+                        <p class="text-secondary">
+                            Server virtual untuk aplikasi, database,
+                            bot, dan kebutuhan pengembangan.
+                        </p>
+                        <a href="#harga" class="text-success">
+                            Lihat Paket →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">🔗</div>
+                        <h4 class="fw-bold">Domain</h4>
+                        <p class="text-secondary">
+                            Gunakan nama domain yang mudah diingat
+                            untuk identitas website milikmu.
+                        </p>
+                        <a href="#kontak" class="text-success">
+                            Tanya Domain →
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Harga Paket -->
+    <section class="py-5 pricing-section" id="harga">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Pilih Paket Hosting</h2>
+                <p class="text-secondary">
+                    Paket contoh untuk kebutuhan yang berbeda.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-4">
+                    <div class="price-card h-100">
+                        <h4 class="fw-bold">Basic Hosting</h4>
+                        <p class="text-secondary">
+                            Untuk website pribadi.
+                        </p>
+
+                        <h3 class="fw-bold">
+                            Rp25.000
+                            <small class="fs-6 text-secondary">/bulan</small>
+                        </h3>
+
+                        <hr>
+
+                        <p>✓ 1 Website</p>
+                        <p>✓ SSL</p>
+                        <p>✓ Panel Hosting</p>
+
+                        <a href="#kontak"
+                            class="btn btn-outline-success w-100">
+                            Pesan Paket
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="price-card popular h-100">
+                        <span class="badge bg-success mb-2">
+                            Pilihan Populer
+                        </span>
+
+                        <h4 class="fw-bold">VPS Starter</h4>
+                        <p class="text-secondary">
+                            Untuk aplikasi dan proyek.
+                        </p>
+
+                        <h3 class="fw-bold">
+                            Rp75.000
+                            <small class="fs-6 text-secondary">/bulan</small>
+                        </h3>
+
+                        <hr>
+
+                        <p>✓ 1 vCPU</p>
+                        <p>✓ RAM 2 GB</p>
+                        <p>✓ SSD 30 GB</p>
+
+                        <a href="#kontak" class="btn btn-success w-100">
+                            Pesan Paket
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="price-card h-100">
+                        <h4 class="fw-bold">VPS Pro</h4>
+                        <p class="text-secondary">
+                            Untuk kebutuhan lebih besar.
+                        </p>
+
+                        <h3 class="fw-bold">
+                            Rp150.000
+                            <small class="fs-6 text-secondary">/bulan</small>
+                        </h3>
+
+                        <hr>
+
+                        <p>✓ 2 vCPU</p>
+                        <p>✓ RAM 4 GB</p>
+                        <p>✓ SSD 60 GB</p>
+
+                        <a href="#kontak"
+                            class="btn btn-outline-success w-100">
+                            Pesan Paket
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-center text-secondary mt-4">
+                <small>
+                    Harga dan spesifikasi di atas hanya contoh.
+                    Sesuaikan dengan layanan yang benar-benar tersedia.
+                </small>
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Kontak -->
+    <footer id="kontak">
         <div class="container py-5">
 
             <div class="row">
 
                 <div class="col-md-4 mb-4">
-                    <img src="img/logo_pasar.png" alt="logo_pasar" width="100" height="70">
+                    <img src="img/logo_octa.png" alt="Octa Cloud" width="100">
 
                     <p>
-                        PasarKita adalah marketplace sederhana yang menyediakan
-                        berbagai kebutuhan mulai dari elektronik, fashion,
-                        makanan, gaming, hingga aksesoris.
-                    </p>
-
-                    <p class="mb-0">
-                        <small>
-                            Belanja mudah, aman, dan nyaman.
-                        </small>
+                        Solusi VPS dan web hosting untuk membantu
+                        website serta aplikasi kamu berjalan online.
                     </p>
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold">Menu</h5>
+                    <h5 class="fw-bold">Navigasi</h5>
 
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="#elektronik" class="text-dark text-decoration-none">
-                                Elektronik
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="#fashion" class="text-dark text-decoration-none">
-                                Fashion
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="#makanan" class="text-dark text-decoration-none">
-                                Makanan
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="#gaming" class="text-dark text-decoration-none">
-                                Gaming
-                            </a>
-                        </li>
-
-                        <li class="mb-2">
-                            <a href="#aksesoris" class="text-dark text-decoration-none">
-                                Aksesoris
-                            </a>
-                        </li>
-                    </ul>
+                    <p>
+                        <a href="#top">Beranda</a>
+                    </p>
+                    <p>
+                        <a href="#layanan">Layanan</a>
+                    </p>
+                    <p>
+                        <a href="#harga">Harga Paket</a>
+                    </p>
                 </div>
 
-                <div class="col-md-4 mb-4" id="kontak">
-
+                <div class="col-md-4 mb-4">
                     <h5 class="fw-bold">Hubungi Kami</h5>
 
-                    <p class="mb-3">
-                        <strong>WhatsApp:</strong><br>
-                        <a href="https://wa.me/62895364789818" target="_blank" class="text-dark text-decoration-none">
+                    <p>
+                        WhatsApp:
+                        <a href="https://wa.me/62895364789818"
+                            target="_blank" rel="noopener">
                             +62 895-3647-89818
                         </a>
                     </p>
 
-                    <p class="mb-3">
-                        <strong>No. Telepon:</strong><br>
-                        <a href="tel:+62895364789818" class="text-dark text-decoration-none">
+                    <p>
+                        Telepon:
+                        <a href="tel:+62895364789818">
                             +62 895-3647-89818
                         </a>
                     </p>
 
-                    <p class="mb-3">
-                        <strong>Email:</strong><br>
-                        <a href="mailto:info@pasarkita.com" class="text-dark text-decoration-none">
-                            info@PasarLOAK.com
+                    <p>
+                        Email:
+                        <a href="mailto:info@hostkita.com">
+                            info@hostkita.com
                         </a>
                     </p>
 
-                    <p class="mb-0">
-                        <strong>Instagram:</strong><br>
-                        <a href="https://www.instagram.com/" target="_blank" class="text-dark text-decoration-none">
-                            @PasarLOAK
+                    <p>
+                        Instagram:
+                        <a href="https://www.instagram.com/"
+                            target="_blank" rel="noopener">
+                            @hostkita
                         </a>
                     </p>
-
                 </div>
 
             </div>
 
-            <hr class="border-secondary">
+            <hr>
 
             <div class="text-center">
                 <p class="mb-0">
-                    &copy; 2026 <strong>PasarLOAK</strong>.
+                    &copy; 2026 <strong>HostKita</strong>.
                     Semua Hak Dilindungi.
                 </p>
-
-                <small class="text-secondary">
-                    Marketplace Jual Beli Online
-                </small>
+                <small>VPS & Web Hosting</small>
             </div>
 
         </div>
     </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
-
-
 </html>
