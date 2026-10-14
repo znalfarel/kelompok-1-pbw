@@ -11,6 +11,11 @@ body {
     font-size: 25px;
 }
 
+
+.navbar.hide {
+    top: -75px;
+}
+
 .home {
     background-color: #f7faf6;
 }
