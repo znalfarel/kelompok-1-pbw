@@ -1,0 +1,19 @@
+.text-orange {
+    color: #fc5c00 ;
+}
+
+.btn-orange {
+    background: #fc5c00 !important;
+    color: #fff !important;
+}
+
+.btn-orange:hover { 
+    background: #fff !important; 
+    color: #fc5c00 !important; 
+    border-color: #fc5c00 !important; 
+}
+
+a.text-orange:hover, 
+a.text-muted:hover {
+    text-decoration: underline !important;
+}
