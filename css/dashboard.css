@@ -2,6 +2,11 @@ html {
     scrollbar-gutter: stable;
 }
 
+body {
+  color: #fc5c00;
+  font-family: "Inter", sans-serif;
+}
+
 .navbar {
     background-color: #f5e8d7;
 }
