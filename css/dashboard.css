@@ -26,55 +26,55 @@ html {
 }
 
 :root {
-  --purple: #673de6;
-  --purple-hover: #5025d1;
-  --purple-light: #f4f2ff;
-  --purple-subtle: #ebe4ff;
+  --orange: #fc5c00;
+  --orange-hover: #cac2be;
+  --orange-light: #f4f2ff;
+  --orange-subtle: #ebe4ff;
 }
 
 /* Utilitas Warna Ungu */
-.text-purple {
-  color: var(--purple) !important;
+.text-orange {
+  color: var(--orange) !important;
 }
 
-.bg-purple {
-  background-color: var(--purple) !important;
+.bg-orange {
+  background-color: var(--orange) !important;
 }
 
-.bg-purple-light {
-  background-color: var(--purple-light) !important;
+.bg-orange-light {
+  background-color: var(--orange-light) !important;
 }
 
-.bg-purple-subtle {
-  background-color: var(--purple-subtle) !important;
+.bg-orange-subtle {
+  background-color: var(--orange-subtle) !important;
 }
 
 /* Tombol Ungu */
-.btn-purple {
-  background-color: var(--purple);
+.btn-orange {
+  background-color: var(--orange);
   color: #fff;
   border: none;
 }
 
-.btn-purple:hover {
-  background-color: var(--purple-hover);
+.btn-orange:hover {
+  background-color: var(--orange-hover);
   color: #fff;
 }
 
-.btn-outline-purple {
-  color: var(--purple);
-  border: 1px solid var(--purple);
+.btn-outline-orange {
+  color: var(--orange);
+  border: 1px solid var(--orange);
   background: transparent;
 }
 
-.btn-outline-purple:hover {
-  background-color: var(--purple-subtle);
-  color: var(--purple);
+.btn-outline-orange:hover {
+  background-color: var(--orange-subtle);
+  color: var(--orange);
 }
 
 /* Banner Promo */
 .promo-banner {
-  background: linear-gradient(90deg, #110e24 0%, #5b35d5 100%);
+  background: linear-gradient(90deg, #110e24 0%, #fc5c00 100%);
   color: #fff;
 }
 
