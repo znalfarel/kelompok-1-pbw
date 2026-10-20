@@ -1,3 +1,7 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     color: #fc5c00;
     font-family: Arial, sans-serif;

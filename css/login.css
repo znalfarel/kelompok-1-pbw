@@ -7,6 +7,10 @@
     color: #fff !important;
 }
 
+.navbar.hide {
+    top: -75px;
+}
+
 .btn-orange:hover { 
     background: #fff !important; 
     color: #fc5c00 !important; 

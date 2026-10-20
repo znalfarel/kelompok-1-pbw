@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octacloud - VPS dan Web Hosting</title>
+    <link rel="icon" href="img/logo_octa.png">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="bg-light text-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo_octa.png" alt="Octa Cloud" width="95">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#top">Beranda</a>
+                    <a class="nav-link" href="#layanan">Layanan</a>
+                    <a class="nav-link" href="#harga">Harga Paket</a>
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </div>
+
+                <a href="login.html" class="btn btn-orange ms-lg-3">
+                    Mulai Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5" style="max-width: 1040px;">
+        <h1 class="h5 fw-bold mb-4">Keranjang Anda</h1>
+
+        <!-- Form Utama Keranjang (HTML Living Standard) -->
+        <form id="checkout-form" action="/checkout" method="POST" class="row g-4">
+
+            <!-- KOLOM KIRI -->
+            <div class="col-lg-8 d-flex flex-column gap-3">
+
+                <!-- 1. Paket Single (Menggunakan fieldset) -->
+                <fieldset class="card border-0 shadow-sm rounded-4 p-4 m-0">
+                    <legend class="visually-hidden">Pilihan Durasi Paket Single</legend>
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="bg-light rounded-3 p-2 fs-5 d-flex align-items-center justify-content-center"
+                            style="width: 42px; height: 42px;">
+                            <i class="bi bi-hdd-stack"></i>
+                        </div>
+                        <div>
+                            <h2 class="h6 fw-bold mb-0">Paket Single</h2>
+                            <small class="text-secondary">Pembuatan website dan hosting</small>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center g-3">
+                        <div class="col-sm-5">
+                            <label for="durasi" class="form-label small fw-semibold mb-1">Durasi</label>
+                            <select id="durasi" name="duration_months" class="form-select rounded-3" required>
+                                <option value="48" selected>48 bulan</option>
+                                <option value="24">24 bulan</option>
+                                <option value="12">12 bulan</option>
+                                <option value="1">1 bulan</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-7 text-sm-end mt-sm-4">
+                            <div class="d-flex align-items-center justify-content-sm-end gap-2">
+                                <span class="badge rounded-2 bg-danger mb-4">HEMAT Rp3.696.000</span>
+                                <div>
+                                    <div class="fw-bold fs-5">
+                                        <output name="monthly_price" for="durasi">Rp12.900</output><small
+                                            class="fw-normal text-secondary fs-6">/bln</small>
+                                    </div>
+                                    <del class="text-secondary small">Rp89.900/bln</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <small class="text-secondary mt-2 mb-3">
+                        Diperpanjang setelah 48 bulan dengan harga Rp54.900/bln. Bisa dibatalkan kapan saja.
+                    </small>
+
+                    <div
+                        class="promo-banner rounded-3 p-2 px-3 d-flex align-items-center justify-content-between mb-3 small fw-medium">
+                        <span><i class="bi bi-tag me-2"></i>Harga terendah tahun ini. Harga naik setelah promo
+                            berakhir</span>
+                        <i class="bi bi-percent"></i>
+                    </div>
+
+                    <div class="border-top pt-3 small">
+                        <i class="bi bi-check-circle-fill text-success me-1"></i>
+                        <strong class="text-success">Gratis</strong> 1 mailbox selama 1 tahun (1 GB).
+                    </div>
+                </fieldset>
+
+                <!-- 2. Hostinger Ecommerce -->
+                <fieldset class="card border-0 shadow-sm rounded-4 p-4 m-0">
+                    <legend class="visually-hidden">Tambahan Layanan Ecommerce</legend>
+                    <div class="form-check d-flex align-items-center gap-2 mb-2">
+                        <input class="form-check-input mt-0" type="checkbox" id="ecommerce" name="addon_ecommerce"
+                            value="1">
+                        <label class="form-check-label fw-bold small" for="ecommerce">Tambahkan Hostinger
+                            Ecommerce</label>
+                        <span class="badge bg-purple-subtle text-purple">Direkomendasikan</span>
+                    </div>
+                    <p class="text-secondary small mb-2">
+                        Jual produk digital & fisik sepuasnya tanpa biaya transaksi langsung lewat website atau link
+                        pembayaran.
+                    </p>
+                    <div>
+                        <span class="fw-bold">Rp14.900</span> <small class="text-secondary">untuk 3 bulan
+                            pertama</small>
+                    </div>
+                </fieldset>
+
+                <!-- 3. Cari Domain (Menggunakan input search + datalist bawaan HTML) -->
+                <fieldset class="card border-0 shadow-sm rounded-4 p-4 m-0">
+                    <legend class="h6 fw-bold mb-1"><i class="bi bi-globe me-2"></i>Miliki domain lainnya</legend>
+                    <p class="text-secondary small mb-3">Pilih domain sekarang dan publikasikan website lebih cepat.</p>
+                    <div class="input-group">
+                        <label for="domain-search" class="input-group-text bg-white border-end-0 rounded-start-3">
+                            <i class="bi bi-search text-secondary"></i>
+                            <span class="visually-hidden">Cari domain</span>
+                        </label>
+                        <input type="search" id="domain-search" name="domain_query" list="domain-suggestions"
+                            class="form-control border-start-0 rounded-end-3" placeholder="Cari" autocomplete="off">
+                        <!-- Fitur Datalist HTML Living Standard -->
+                        <datalist id="domain-suggestions">
+                            <option value="websiteanda.com">
+                            <option value="websiteanda.id">
+                            <option value="websiteanda.online">
+                            <option value="websiteanda.store">
+                        </datalist>
+                    </div>
+                </fieldset>
+
+                <!-- 4. Email Marketing -->
+                <fieldset class="card border-0 bg-purple-light rounded-4 p-4 m-0">
+                    <legend class="h6 fw-bold mb-2 d-flex align-items-center gap-2">
+                        <span class="badge bg-purple p-1"><i class="bi bi-brightness-high"></i></span>
+                        Email marketing dengan Hostinger Reach
+                    </legend>
+                    <p class="small fw-semibold mb-2">Solusi email marketing lengkap untuk bisnis Anda</p>
+
+                    <ul class="list-unstyled small text-secondary mb-3 d-flex flex-column gap-1">
+                        <li><i class="bi bi-check2 text-dark me-1"></i> Otomatis sinkronkan kontak dari website</li>
+                        <li><i class="bi bi-check2 text-dark me-1"></i> Email sambutan otomatis untuk ciptakan interaksi
+                        </li>
+                        <li><i class="bi bi-check2 text-dark me-1"></i> Campaign & segmen audiens berbasis AI</li>
+                    </ul>
+
+                    <div class="mb-3">
+                        <span class="fw-bold fs-5">Rp27.900</span><small class="text-secondary">/bln</small>
+                    </div>
+
+                    <div class="row g-2 align-items-end">
+                        <div class="col-sm-6">
+                            <label for="penerima" class="form-label small fw-semibold mb-1">Penerima/bln</label>
+                            <select id="penerima" name="email_Marketing_tier" class="form-select rounded-3">
+                                <option value="0-500" selected>0-500</option>
+                                <option value="500-1000">500-1.000</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" formaction="/cart/add-email-marketing" formnovalidate
+                                class="btn btn-outline-purple w-100 rounded-3">
+                                Tambah email marketing
+                            </button>
+                        </div>
+                    </div>
+                    <small class="text-secondary mt-2">For 2yr term. You pay Rp669.600 today.</small>
+                </fieldset>
+
+            </div>
+
+            <!-- KOLOM KANAN (Ringkasan Pesanan dengan elemen <output>) -->
+            <div class="col-lg-4">
+                <aside class="card border-0 shadow-sm rounded-4 p-4">
+                    <h2 class="h6 fw-bold mb-3">Ringkasan pesanan</h2>
+
+                    <div class="small fw-bold mb-1">Paket Single</div>
+                    <div class="d-flex justify-content-between small mb-3">
+                        <span class="text-secondary">Durasi 48 bulan</span>
+                        <div>
+                            <del class="text-secondary me-1">Rp4.315.200</del>
+                            <output name="subtotal" for="durasi" class="fw-semibold">Rp619.200</output>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between small border-top border-bottom py-3 my-1">
+                        <span class="text-secondary">Pajak <i class="bi bi-question-circle"></i></span>
+                        <output name="tax" for="durasi ecommerce" class="fw-semibold">Rp68.112</output>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center my-3">
+                        <span class="fw-bold">Total</span>
+                        <div>
+                            <del class="text-secondary small me-1">Rp4.383.312</del>
+                            <output name="total" for="durasi ecommerce coupon_code"
+                                class="fw-bold fs-5">Rp687.312</output>
+                        </div>
+                    </div>
+
+                    <details class="mb-3">
+                        <summary class="text-purple small fw-bold" style="cursor: pointer; list-style: none;">
+                            Punya Kode Kupon?
+                        </summary>
+                        <div class="input-group input-group-sm mt-2">
+                            <input type="text" name="coupon_code" class="form-control" placeholder="Masukkan kupon"
+                                aria-label="Kode Kupon">
+                            <button type="submit" formaction="/cart/apply-coupon" formnovalidate
+                                class="btn btn-outline-purple">Pakai</button>
+                        </div>
+                    </details>
+
+                    <button type="submit" class="btn btn-purple w-100 rounded-3 py-2 fw-semibold">Lanjutkan</button>
+                </aside>
+
+                <!-- Jaminan & Review -->
+                <div class="text-center mt-3 small text-secondary">
+                    <div class="mb-2">
+                        <i class="bi bi-shield-check me-1"></i>Jaminan 30 hari uang kembali
+                    </div>
+                    <div class="text-dark">
+                        <span class="fw-bold me-1">Excellent</span>
+                        <span class="text-success" aria-label="Rating 4.5 dari 5 bintang">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </span>
+                        <div class="mt-1">
+                            <a href="#" class="text-dark fw-semibold">73,319 reviews on</a> <strong>Trustpilot</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

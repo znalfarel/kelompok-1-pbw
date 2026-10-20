@@ -1,0 +1,84 @@
+html {
+    scrollbar-gutter: stable;
+}
+
+.navbar {
+    background-color: #f5e8d7;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.btn-orange {
+    background: #fc5c00 !important;
+    color: #fff !important;
+}
+
+.btn-orange:hover { 
+    background: #f5e8d7 !important; 
+    color: #fc5c00 !important; 
+    border-color: #fc5c00 !important; 
+}
+
+.navbar.hide {
+    top: -75px;
+}
+
+:root {
+  --purple: #673de6;
+  --purple-hover: #5025d1;
+  --purple-light: #f4f2ff;
+  --purple-subtle: #ebe4ff;
+}
+
+/* Utilitas Warna Ungu */
+.text-purple {
+  color: var(--purple) !important;
+}
+
+.bg-purple {
+  background-color: var(--purple) !important;
+}
+
+.bg-purple-light {
+  background-color: var(--purple-light) !important;
+}
+
+.bg-purple-subtle {
+  background-color: var(--purple-subtle) !important;
+}
+
+/* Tombol Ungu */
+.btn-purple {
+  background-color: var(--purple);
+  color: #fff;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: var(--purple-hover);
+  color: #fff;
+}
+
+.btn-outline-purple {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  background: transparent;
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--purple-subtle);
+  color: var(--purple);
+}
+
+/* Banner Promo */
+.promo-banner {
+  background: linear-gradient(90deg, #110e24 0%, #5b35d5 100%);
+  color: #fff;
+}
+
+/* Menghilangkan ikon panah bawaan <summary> di semua browser */
+summary::-webkit-details-marker {
+  display: none;
+}
