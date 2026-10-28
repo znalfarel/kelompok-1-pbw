@@ -37,7 +37,6 @@ body {
   --orange-subtle: #ebe4ff;
 }
 
-/* Utilitas Warna Ungu */
 .text-orange {
   color: var(--orange) !important;
 }
@@ -54,7 +53,6 @@ body {
   background-color: var(--orange-subtle) !important;
 }
 
-/* Tombol Ungu */
 .btn-orange {
   background-color: var(--orange);
   color: #fff;
@@ -77,7 +75,6 @@ body {
   color: var(--orange);
 }
 
-/* Banner Promo */
 .promo-banner {
   background: linear-gradient(90deg, #110e24 0%, #fc5c00 100%);
   color: #fff;
@@ -88,13 +85,11 @@ body {
   backdrop-filter: blur(2px);
 }
 
-/* Efek gelap di belakang pop-up */
 #popup-pembayaran::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
 
-/* Mempercantik interaksi klik pada opsi pembayaran */
 .payment-option {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -104,13 +99,11 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Mengubah warna kotak saat radio button di dalamnya terpilih (checked) */
 .payment-option:has(input:checked) {
-  border-color: #fd7e14 !important; /* Warna oranye menyesuaikan btn-orange */
+  border-color: #fd7e14 !important;
   background-color: #fff8f3;
 }
 
-/* Mengubah warna bulatan radio button saat dipilih */
 .payment-option input:checked {
   background-color: #fd7e14;
   border-color: #fd7e14;
