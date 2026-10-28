@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-light text-dark">
@@ -38,7 +39,7 @@
                     <a class="nav-link" href="../index.html#kontak">Kontak</a>
                 </div>
 
-                <a href="../auth/login.html" class="btn btn-orange ms-lg-3">
+                <a href="../auth/login.html" class="btn btn-oren ms-lg-3">
                     Mulai Sekarang
                 </a>
             </div>
@@ -229,8 +230,74 @@
                                 class="btn btn-outline-orange">Pakai</button>
                         </div>
                     </details>
+                    <!-- Tombol Pemicu Pop-up -->
+                    <button type="button" popovertarget="popup-pembayaran"
+                        class="btn btn-oren w-100 rounded-3 py-2 fw-semibold">
+                        Beli Sekarang
+                    </button>
 
-                    <button type="submit" class="btn btn-orange w-100 rounded-3 py-2 fw-semibold">Lanjutkan</button>
+                    <!-- Pop-up Pilih Metode Pembayaran -->
+                    <div id="popup-pembayaran" popover class="border-0 rounded-4 shadow-lg p-4"
+                        style="max-width: 420px; width: 92%;">
+
+                        <!-- Header Pop-up -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="fw-bold mb-0">Pilih Metode Pembayaran</h5>
+                            <button type="button" popovertarget="popup-pembayaran" popovertargetaction="hide"
+                                class="btn-close" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Daftar Metode Pembayaran -->
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <!-- Opsi 1: QRIS -->
+                            <label
+                                class="payment-option d-flex align-items-center justify-content-between p-3 border rounded-3"
+                                for="pay-qris">
+                                <div>
+                                    <div class="fw-semibold">QRIS</div>
+                                    <small class="text-secondary">GoPay, OVO, Dana, ShopeePay</small>
+                                </div>
+                                <input class="form-check-input fs-5 m-0" type="radio" name="metode_pembayaran"
+                                    id="pay-qris" value="qris" required checked>
+                            </label>
+
+                            <!-- Opsi 2: Virtual Account -->
+                            <label
+                                class="payment-option d-flex align-items-center justify-content-between p-3 border rounded-3"
+                                for="pay-va">
+                                <div>
+                                    <div class="fw-semibold">Transfer Virtual Account</div>
+                                    <small class="text-secondary">BCA, Mandiri, BNI, BRI</small>
+                                </div>
+                                <input class="form-check-input fs-5 m-0" type="radio" name="metode_pembayaran"
+                                    id="pay-va" value="va">
+                            </label>
+
+                            <!-- Opsi 3: Minimarket / COD -->
+                            <label
+                                class="payment-option d-flex align-items-center justify-content-between p-3 border rounded-3"
+                                for="pay-cod">
+                                <div>
+                                    <div class="fw-semibold">COD (Bayar di Tempat)</div>
+                                    <small class="text-secondary">Bayar tunai saat kurir tiba</small>
+                                </div>
+                                <input class="form-check-input fs-5 m-0" type="radio" name="metode_pembayaran"
+                                    id="pay-cod" value="cod">
+                            </label>
+                        </div>
+
+                        <!-- Footer / Tombol Aksi -->
+                        <div class="d-flex gap-2">
+                            <button type="button" popovertarget="popup-pembayaran" popovertargetaction="hide"
+                                class="btn btn-light w-50 rounded-3 py-2 fw-medium">
+                                Batal
+                            </button>
+                            <!-- Tombol type="submit" untuk mengirim form beserta metode yang dipilih -->
+                            <button type="submit" class="btn btn-oren w-50 rounded-3 py-2 fw-semibold">
+                                Bayar Sekarang
+                            </button>
+                        </div>
+                    </div>
                 </aside>
 
                 <!-- Jaminan & Review -->

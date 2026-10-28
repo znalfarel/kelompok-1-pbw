@@ -15,12 +15,12 @@ body {
     font-size: 25px;
 }
 
-.btn-orange {
+.btn-oren {
     background: #fc5c00 !important;
     color: #fff !important;
 }
 
-.btn-orange:hover { 
+.btn-oren:hover { 
     background: #f5e8d7 !important; 
     color: #fc5c00 !important; 
     border-color: #fc5c00 !important; 
@@ -83,7 +83,35 @@ body {
   color: #fff;
 }
 
-/* Menghilangkan ikon panah bawaan <summary> di semua browser */
-summary::-webkit-details-marker {
-  display: none;
+#popup-beli::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+/* Efek gelap di belakang pop-up */
+#popup-pembayaran::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+/* Mempercantik interaksi klik pada opsi pembayaran */
+.payment-option {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.payment-option:hover {
+  background-color: #f8f9fa;
+}
+
+/* Mengubah warna kotak saat radio button di dalamnya terpilih (checked) */
+.payment-option:has(input:checked) {
+  border-color: #fd7e14 !important; /* Warna oranye menyesuaikan btn-orange */
+  background-color: #fff8f3;
+}
+
+/* Mengubah warna bulatan radio button saat dipilih */
+.payment-option input:checked {
+  background-color: #fd7e14;
+  border-color: #fd7e14;
 }
